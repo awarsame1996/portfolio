@@ -17,13 +17,17 @@
 body {
   background-color: black;
   color: var(--text);
+  min-height: 1.2;
+  margin: 0%;
 }
 .banner {
   margin-top: 6.8rem;
   height: 38rem;
-  display: flex;
-  flex-direction: column;
-  background-image: url("../images/coding.jpg");
+  background-image: linear-gradient(
+    to top rgba(20, 20, 20, 0.7),
+    rgba(133, 133, 133, 0.2),
+    url("../images/coding.jpg")
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,17 +61,20 @@ body {
 .btn1 {
   font-size: 1.8rem;
   padding: 2rem;
-  border-radius: 10%;
-  background-color: var(--red);
-  color: var(--text);
+  border: var(--red) 0.5rem solid;
+  color: var(--red);
   border-radius: 4rem;
+  text-decoration: none;
 }
-
-.btn1:hover span {
+.banner-link:hover .btn1 span {
   display: none;
 }
+.banner-link:hover .btn1 {
+  background-color: var(--red);
+  color: var(--text);
+}
 .btn1:hover:before {
-  content: "More about me ▼";
+  content: "more about me ↓";
   cursor: pointer;
 }
 .header {
@@ -83,12 +90,18 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.nav-link-item {
-  margin-right: 20px;
+.nav-links-container {
+  display: flex;
+  flex-direction: row;
 }
 .nav-link {
+  margin: 1.6rem;
+}
+
+.nav-link a {
   text-decoration: none;
   color: var(--text);
+  font-size: 1.4rem;
 }
 .nav-link:hover {
   cursor: pointer;
