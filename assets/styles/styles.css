@@ -1,9 +1,10 @@
 :root {
   --blue: #114b5f;
   --red: #ce5967;
-  --purple: #d170e6;
-  --other-purple: #7d60aa;
   --text: #e4fde1;
+  --dark-grey: #222831;
+  --black: #151515;
+  --cream: #b4a5a5;
 }
 * {
   margin: 0;
@@ -15,13 +16,13 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 body {
-  background-color: black;
+  background-color: var(--dark-grey);
   color: var(--text);
   min-height: 1.2;
-  margin: 0%;
+  margin: 0;
 }
 .banner {
-  margin-top: 6.8rem;
+  margin-top: 2.8rem;
   height: 38rem;
   background-image: linear-gradient(
       to top,
@@ -82,21 +83,22 @@ body {
   position: fixed;
   top: 0%;
   width: 100%;
-  height: 6.8rem;
-  background-color: black;
+  height: 2rem;
+  background-color: var(--black);
   z-index: 10;
 }
 .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-links-container {
   display: flex;
   flex-direction: row;
 }
 .nav-link {
-  margin: 1.6rem;
+  margin-right: 1.6rem;
 }
 
 .nav-link a {
@@ -104,12 +106,12 @@ body {
   color: var(--text);
   font-size: 1.4rem;
 }
-.nav-link:hover {
+.nav-link:hover a {
   cursor: pointer;
-  color: var(--other-purple);
-  background-color: var(--text);
+  color: var(--red);
 }
 .about-container {
+  margin-top: 6.8rem;
   display: flex;
   flex-direction: row;
 }
@@ -153,6 +155,9 @@ body {
 i {
   font-size: 5rem;
 }
+.project {
+  margin-top: 10.8rem;
+}
 .featured-projects {
   display: flex;
   flex-direction: column;
@@ -182,6 +187,7 @@ i {
   color: var(--orange-web);
   transform: rotateX(20);
   cursor: pointer;
+  border: 2px solid var(--red);
 }
 .project-card-main:hover img {
   filter: blur(4px);
@@ -207,7 +213,7 @@ i {
   bottom: 0;
   background-color: rgba(var(--other-purple), 0.6);
   width: 100%;
-  color: var(--blue);
+  color: var(--red);
   padding: 2rem;
 }
 .project-info h3,
@@ -219,9 +225,9 @@ i {
 }
 .project-card:hover {
   transform: scale(1.2);
-  color: var(--orange-web);
   transform: rotateX(20);
   cursor: pointer;
+  border: 2px solid var(--red);
 }
 .project-card:hover img {
   filter: blur(4px);
@@ -242,6 +248,7 @@ i {
   color: var(--red);
   border-radius: 4rem;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .project-link:hover .btn2 span {
   display: none;
@@ -259,6 +266,7 @@ i {
   margin-top: 200px;
 }
 .form-container {
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -266,7 +274,7 @@ i {
   margin: 0px 20px;
   padding: 20px;
   text-align: center;
-  background-color: rgba(255, 228, 196, 0.349);
+  background-color: var(--black);
 }
 .form-row {
   display: flex;
@@ -282,15 +290,57 @@ i {
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
+  background-color: var(--dark-grey);
+  text-align: center;
 }
 .form-input-email {
   padding: 10px;
   margin-bottom: 10px;
   width: 100%;
+  background-color: var(--dark-grey);
+  text-align: center;
 }
-.btn {
-  width: 50%;
-  height: 20px;
+
+.btn3 {
+  font-size: 1rem;
+  padding: 1rem;
+  border: var(--red) 0.5rem solid;
+  color: var(--red);
+  border-radius: 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn3:hover span {
+  display: none;
+}
+.btn3:hover {
+  background-color: var(--red);
+  color: var(--text);
+}
+.btn3:hover:before {
+  content: "submit ↓";
+  cursor: pointer;
+}
+.footer {
+  margin-top: 14rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--cream);
+}
+.footer-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 2rem;
+}
+.footer-link {
+  height: 100%;
+}
+.footer-image {
+  height: 2rem;
+}
+.footer-name {
+  margin-left: 10rem;
 }
 
 @keyframes moveFromTopWithBounce {
