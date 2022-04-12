@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
     <title>Portfolio</title>
   </head>
 
@@ -40,19 +43,46 @@
       </button>
     </section>
 
-    <section id="about" class="about">
-      <h2>About</h2>
-      <div></div>
-      <div></div>
-    </section>
-    <section id="#skills" class="my-skills">
-      <div></div>
+    <section id="about" class="about-container">
+    
+      <div class="about-me"> 
+         <h2>About</h2>
+         <div class="profile-pic"> 
+           <img src="./assets/images/profile photo.jpeg" alt="profile photo"> 
+        </div>
+       
+        <h3>who am I?</h3>
+        <p>I'm and aspiring web developer currently training away at the 
+          University of Birmingham Coding Boot Camp. Just taking on the new venture in life to
+        add my skills under my belt and to ultimately challenge myself into doing something I've never done </p>
+        </div>
+      <div class="skills-container" >
+        <h2>skills</h2>
+        <div class="skills-card">
+           <i class="devicon-html5-plain"></i> 
+           <h3 class="skills-card-info">HTML:5</h3>
+          </div>
+        <div class="skills-card">
+          <i class="devicon-css3-plain"></i> 
+          <h3 class="skills-card-info">CSS</h3>
+        </div>
+        <div class="skills-card">
+          <i class="devicon-javascript-plain"></i>
+          <h3 class="skills-card-info">JAVASCRIPT</h3>
+         </div>
+        <div class="skills-card">
+           <i class="devicon-react-original"></i> 
+           <h3 class="skills-card-info">REACT</h3>
+          </div>  
+      </div>
+      </div>
+      
     </section>
     <section id="project" class="project">
       <section id="featured" class="featured-projects">
         <h2>Featured Projects</h2>
         <div class="project-container">
-          <div class="project-card">
+          <div class="project-card-main">
             <img
               src="https://media.istockphoto.com/photos/vintage-antique-snakes-and-ladders-board-game-picture-id1075478326?s=612x612"
               alt="snakes and ladders image"
@@ -63,7 +93,8 @@
            </div>
            
           </div>
-          <div class="project-card">
+          <div class="project-container">
+            <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/many-pieces-on-chess-game-board-kings-strategy-concept-picture-id532409126?s=612x612"
               alt="chess image"
@@ -83,7 +114,9 @@
               <h4>Lorem ipsum dolor  inventore voluptas quibu</h4>
            </div>
            
+          </div> 
           </div>
+         
         </div>
       </section>
       <section id="all-projects" class="all-projects">
