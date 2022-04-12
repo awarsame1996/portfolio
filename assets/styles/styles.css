@@ -24,10 +24,11 @@ body {
   margin-top: 6.8rem;
   height: 38rem;
   background-image: linear-gradient(
-    to top rgba(20, 20, 20, 0.7),
-    rgba(133, 133, 133, 0.2),
-    url("../images/coding.jpg")
-  );
+      to top,
+      rgba(20, 20, 20, 0.7),
+      rgba(133, 133, 133, 0.2)
+    ),
+    url("../images/coding.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,26 +113,73 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  border: 1px solid black;
-  justify-content: right;
+  justify-content: centre;
+  position: relative;
 }
 .project-card {
   position: relative;
-  height: 20rem;
+  width: 20rem;
   margin: 2rem;
+  border: 1px solid var(--text);
 }
 .project-card img {
   width: 100%;
-  height: 50%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+}
+.project-info {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(var(--other-purple), 0.6);
+  width: 100%;
+  color: var(--blue);
+  padding: 2rem;
+}
+.project-info h3,
+.project-info h4 {
+  text-align: center;
+  margin: 0%;
+  padding: 10px, 0px;
+  text-transform: uppercase;
 }
 .project-card:hover {
   transform: scale(1.2);
   color: var(--orange-web);
   transform: rotateX(20);
+  cursor: pointer;
+}
+.project-card:hover img {
+  filter: blur(4px);
+}
+.project-card:hover .project-info {
+  display: block;
 }
 
+.project-link {
+  position: absolute;
+  margin: 20px;
+  left: 35%;
+}
+.btn2 {
+  font-size: 1rem;
+  padding: 1rem;
+  border: var(--red) 0.5rem solid;
+  color: var(--red);
+  border-radius: 4rem;
+  text-decoration: none;
+}
+.project-link:hover .btn2 span {
+  display: none;
+}
+.project-link:hover .btn2 {
+  background-color: var(--red);
+  color: var(--text);
+}
+.btn2:hover:before {
+  content: "more Projects ↓";
+  cursor: pointer;
+}
 .reg-form {
   text-align: center;
   margin-top: 200px;
