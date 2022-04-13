@@ -6,24 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
 
+    <!-- linked stylesheets for the icons used for the coding languages -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
           
     <title>Portfolio</title>
   </head>
 
   <body>
+    <!-- header that contains the nav bar -->
     <header class="header">
+      <!-- flex container -->
       <nav class="nav-container">
+        <!-- nav links div flex container -->
         <div class="nav-links-container">
+          <!-- nav link -->
           <div class="nav-link">
           <a href="#home">Home</a>
         </div>
+          <!-- nav link -->
         <div class="nav-link">
           <a href="#about">About</a>
         </div>
+          <!-- nav link -->
         <div class="nav-link">
           <a href="#project">Projects</a>
         </div>
+          <!-- nav link -->
         <div class="nav-link">
           <a href="#contact">Contact</a>
         </div>
@@ -32,6 +40,7 @@
         
       </nav>
     </header>
+    <!-- section that contains a banner -->
     <section class="banner">  
       <h1 class="title">
         Hello, I'm Abdilatif Warsame, I'm a full stack web developer
@@ -41,9 +50,11 @@
       </div>
      
       </button>
-    </section>
-
-    <section id="about" class="about-container">
+      </section>
+      <!-- main website content -->
+    <main>      
+       <!--section for about me  -->
+     <section id="about" class="about-container">
     
       <div class="about-me"> 
          <h2>About</h2>
@@ -76,11 +87,15 @@
       </div>
       </div>
       
-    </section>
-    <section id="project" class="project">
+     </section>
+     <!-- sections for projects -->
+     <section id="project" class="project">
+       <!-- section for featured projects -->
       <section id="featured" class="featured-projects">
         <h2>Featured Projects</h2>
+        <!-- flex container for projects -->
         <div class="project-container">
+          <!-- project card 1 (enlarged version) -->
           <div class="project-card-main">
             <img
               src="https://media.istockphoto.com/photos/vintage-antique-snakes-and-ladders-board-game-picture-id1075478326?s=612x612"
@@ -93,7 +108,9 @@
            
           </div>
         </div>
+        <!-- flex container for projects -->
           <div class="project-container">
+            <!-- project card 2 -->
             <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/many-pieces-on-chess-game-board-kings-strategy-concept-picture-id532409126?s=612x612"
@@ -104,6 +121,7 @@
               <h4>Lorem ipsum dolor  inventore voluptas quibu</h4>
            </div>
           </div>
+           <!-- project card 3 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/chessboard-with-black-checkers-picture-id1307649368?s=612x612"
@@ -119,9 +137,12 @@
          
         </div>
       </section>
+      <!-- section for all projects -->
       <section id="all-projects" class="all-projects">
         <h2>All Projects</h2>
+        <!-- flex container for project -->
         <div class="project-container">
+           <!-- project card 1 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/vintage-antique-snakes-and-ladders-board-game-picture-id1075478326?s=612x612"
@@ -133,6 +154,7 @@
            </div>
            
           </div>
+           <!-- project card 2 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/many-pieces-on-chess-game-board-kings-strategy-concept-picture-id532409126?s=612x612"
@@ -143,6 +165,7 @@
               <h4>Lorem ipsum dolor  inventore voluptas quibu</h4>
            </div>
           </div>
+           <!-- project card 3 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/chessboard-with-black-checkers-picture-id1307649368?s=612x612"
@@ -154,6 +177,7 @@
            </div>
            
           </div>
+           <!-- project card 4 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/vintage-antique-snakes-and-ladders-board-game-picture-id1075478326?s=612x612"
@@ -165,6 +189,7 @@
            </div>
            
           </div>
+           <!-- project card 5 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/many-pieces-on-chess-game-board-kings-strategy-concept-picture-id532409126?s=612x612"
@@ -175,6 +200,7 @@
               <h4>Lorem ipsum dolor  inventore voluptas quibu</h4>
            </div>
           </div>
+           <!-- project card 6 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/chessboard-with-black-checkers-picture-id1307649368?s=612x612"
@@ -186,6 +212,7 @@
            </div>
            
           </div>
+           <!-- project card 7 -->
           <div class="project-card">
             <img
               src="https://media.istockphoto.com/photos/chessboard-with-black-checkers-picture-id1307649368?s=612x612"
@@ -198,15 +225,20 @@
            
           </div>
         </div>
+         <!-- project button -->
         <div class="project-link">
           <a class="btn2" href="#"> <span> more Projects →</span></a>
        </div>
       </section>
-    </section>
-    <section id="contact" class="reg-form">
+     </section>
+     <!-- section for contact me -->
+     <section id="contact" class="reg-form">
       <h2>CONTACT ME</h2>
+      <!-- flex container for inputs -->
       <div class="form-container">
+        <!-- form row - name -->
         <div class="form-row">
+           <!-- div containing input for first name -->
           <div class="form-item">
             <input
               class="form-input"
@@ -214,6 +246,7 @@
               placeholder="Enter first name"
             />
           </div>
+            <!-- div containing input for last name -->
           <div class="form-item">
             <input
               class="form-input"
@@ -222,7 +255,9 @@
             />
           </div>
         </div>
+         <!-- form row - email -->
         <div class="form-row">
+           <!-- div containing  a form item with an input for email -->
           <div class="form-item">
             <input
               class="form-input-email"
@@ -231,7 +266,9 @@
             />
           </div>
         </div>
+        <!-- form row - first and second line address -->
         <div class="form-row">
+            <!-- div containing  a form item with an input for first line of address -->
           <div class="form-item">
             <input
               class="form-input"
@@ -239,6 +276,7 @@
               placeholder="First line of address"
             />
           </div>
+           <!-- div containing  a form item with an input for second line of address -->
           <div class="form-item">
             <input
               class="form-input"
@@ -247,15 +285,20 @@
             />
           </div>
         </div>
+         <!-- form row - city and postcode -->
         <div class="form-row">
+           <!-- div containing  a form item with an input for city -->
           <div class="form-item">
             <input class="form-input" type="text" placeholder="City" />
           </div>
+           <!-- div containing  a form item with an input for postcode -->
           <div class="form-item">
-            <input class="form-input" type="text" placeholder="Post code" />
+            <input class="form-input" type="text" placeholder="Postcode" />
           </div>
         </div>
+         <!-- form row - form submit -->
         <div class="form-row">
+          <!-- div containing  a form item for submit button-->
           <div class="form-item">
             <div class="form-submit">
               <a class="btn3" href="#"> <span> submit →</span></a>
@@ -263,17 +306,23 @@
           </div>
         </div>
       </div>
-    </section>
+     </section>
+    </main> 
+    <!-- footer that contains footer links -->
     <footer class="footer">
+      <!-- form icon 1 -->
       <div class="footer-icon">
        <a class="footer-link" href="https://www.linkedin.com/in/abdilatif-warsame-130837225/"><img  class="footer-image"src="./assets/images/linkedin.png" alt=""></a>
       </div>
+      <!-- footer icon 2 -->
       <div class="footer-icon">
         <a class="footer-link" href="https://twitter.com/AbdilatifW"><img class="footer-image" src="./assets/images/twitter.png" alt=""></a>
       </div>
+      <!-- footer icon 3 -->
       <div class="footer-icon">
        <a class="footer-link" href="https://github.com/awarsame1996"><img class="footer-image" src="./assets/images/github.png" alt=""></a> 
       </div>
+      <!-- footer icon 4 -->
       <div class="footer-icon">
         <a class="footer-link" href="https://www.twitch.tv/lcg_lt"><img class="footer-image" src="./assets/images/twitch.png" alt=""></a> 
        </div>
