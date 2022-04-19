@@ -136,7 +136,7 @@ h2 {
   width: 48%;
 }
 .profile-pic {
-  width: 50%;
+  width: 25%;
 
   margin: 1rem;
   border: 1px solid var(--text);
@@ -181,6 +181,10 @@ h2 {
 .featured-projects {
   display: flex;
   flex-direction: column;
+  margin: 10rem, 0;
+}
+.all-projects {
+  margin-top: 20rem;
 }
 
 .project-container {
@@ -189,6 +193,7 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  max-width: 90%;
 }
 .project-card-main {
   position: relative;
@@ -393,6 +398,9 @@ h2 {
   .header {
     position: static;
     height: 100%;
+  }
+  .profile-pic {
+    width: 50%;
   }
 
   .about-container {
