@@ -26,7 +26,7 @@ Pieces of the Portfolio:
 ## Deployed URL
 
 Github repository: [here](https://github.com/surajverma2587)
-Live URL: [here]()
+Live URL: [here](https://awarsame1996.github.io/portfolio/)
 
 ## Technologies
 
