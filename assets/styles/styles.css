@@ -5,6 +5,8 @@
   --dark-grey: #222831;
   --black: #151515;
   --cream: #b4a5a5;
+  --very-light-grey: #dfdfde;
+  --light-grey: #8d8daa;
 }
 * {
   margin: 0;
@@ -21,6 +23,8 @@ body {
   min-height: 1.2;
   margin: 0;
 }
+/* header style */
+
 .header {
   position: fixed;
   top: 0%;
@@ -29,6 +33,9 @@ body {
   background-color: var(--black);
   z-index: 10;
 }
+
+/* nav style */
+
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -51,6 +58,9 @@ body {
   cursor: pointer;
   color: var(--red);
 }
+
+/*banner style */
+
 .banner {
   margin-top: 2.8rem;
   height: 38rem;
@@ -109,8 +119,14 @@ body {
   content: "more about me ↓";
   cursor: pointer;
 }
+
+/* about me section style */
+
+h2 {
+  margin-top: 5rem;
+}
 .about-container {
-  margin-top: 6.8rem;
+  margin: 6.8rem;
   display: flex;
   flex-direction: row;
 }
@@ -120,21 +136,25 @@ body {
   width: 48%;
 }
 .profile-pic {
-  width: 20rem;
-  height: 20rem;
+  width: 50%;
+
   margin: 1rem;
   border: 1px solid var(--text);
-  border-radius: 25%;
+  border-radius: 50%;
+}
+.about-info-container {
+  width: 40%;
 }
 .profile-pic img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 25%;
+  border-radius: 50%;
 }
 .skills-card {
   display: flex;
   flex-direction: row;
+  justify-content: right;
   align-items: center;
   margin-top: 10px;
 }
@@ -145,17 +165,18 @@ body {
 .skills-card:hover {
   transform: scale(1.2);
   color: var(--red);
-  transform: rotateX(20);
-  cursor: pointer;
 }
 .skills-card:hover .skills-card-info {
   display: block;
 }
-i {
+.skills-card i {
   font-size: 5rem;
 }
+
+/*projects style*/
 .project {
   margin-top: 10.8rem;
+  background-color: var();
 }
 .featured-projects {
   display: flex;
@@ -261,6 +282,8 @@ i {
   content: "more Projects ↓";
   cursor: pointer;
 }
+/*contact me styles*/
+
 .reg-form {
   text-align: center;
   margin-top: 200px;
@@ -321,27 +344,89 @@ i {
   content: "submit ↓";
   cursor: pointer;
 }
+
+/*footer styles*/
+
 .footer {
-  margin-top: 14rem;
+  padding: 50px;
+  margin: 50 px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background-color: var(--cream);
 }
 .footer-icon {
-  height: 2rem;
-  width: 2rem;
+  margin: 20px;
   margin-left: 2rem;
 }
-.footer-link {
-  height: 100%;
+.footer-icon a {
+  text-decoration: none;
+  color: var(--text);
 }
-.footer-image {
-  height: 2rem;
+.footer-icon:hover a {
+  cursor: pointer;
+  color: var(--red);
 }
-.footer-name {
-  margin-left: 10rem;
+.footer-icon i {
+  font-size: 2rem;
 }
+
+/*styles for responsive website for media screens and any screen with a max width of 596px*/
+
+@media screen and (max-width: 596px) {
+  .nav-container,
+  .nav-links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn1 {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .btn2 {
+    font-size: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--red);
+  }
+
+  .header {
+    position: static;
+    height: 100%;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-info-container {
+    width: 100%;
+  }
+  .skills-container {
+    flex-direction: row;
+  }
+  i {
+    font-size: 2.5rem;
+  }
+  .skills-card {
+    flex-direction: column;
+  }
+  .project-card-main {
+    width: 80vw;
+  }
+  .project-card {
+    width: 60vw;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-name {
+    margin: 0px;
+  }
+}
+/* animations for hover styles in css*/
 
 @keyframes moveFromTopWithBounce {
   0% {
