@@ -40,10 +40,10 @@ Live URL: [here]()
 
 ## Screenshots
 
-### Desktop Viewports
+### Desktop Viewport
 
 ![desktop viewport](./assets/images/screencapture-portfolio.png)
 
-### Mobile Viewports
+### Mobile Viewport
 
 ![mobile viewport](./assets/images/screencapture-portfolio-mobile.png)
