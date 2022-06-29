@@ -140,11 +140,11 @@ h2 {
 	width: 48%;
 }
 .profile-pic {
-	width: 25%;
-
+	height: 20rem;
+	width: 20rem;
 	margin: 1rem;
 	border: 1px solid var(--text);
-	border-radius: 50%;
+	border-radius: 5rem;
 }
 .about-info-container {
 	width: 40%;
@@ -152,8 +152,7 @@ h2 {
 .profile-pic img {
 	object-fit: cover;
 	width: 100%;
-	height: 100%;
-	border-radius: 50%;
+	border-radius: 5rem;
 }
 .skills-card {
 	display: flex;
@@ -207,6 +206,14 @@ h2 {
 	height: 30rem;
 	border: 1px solid var(--text);
 }
+.carousel-caption h5,
+.carousel-caption p {
+	text-align: center;
+	margin: 0%;
+	padding: 10px, 0px;
+	text-transform: uppercase;
+	background-color: var(--red);
+}
 .project-card {
 	position: relative;
 	width: 20rem;
@@ -217,22 +224,22 @@ h2 {
 .project-card img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+	object-fit: cover;
 }
 .project-info {
 	position: absolute;
 	bottom: 0;
-	background-color: rgba(var(--other-purple), 0.6);
+
 	width: 100%;
 	color: var(--text);
 	padding: 2rem;
 }
-.project-info h3,
-.project-info p {
+.project-info h5 {
 	text-align: center;
 	margin: 0%;
 	padding: 10px, 0px;
 	text-transform: uppercase;
+	background-color: var(--red);
 }
 .project-card:hover {
 	transform: scale(1.2);
