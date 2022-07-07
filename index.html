@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+
+    <!-- linked stylesheets for the icons used for the coding languages -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <!-- header that contains the nav bar -->
+    <header class="header">
+      <!-- flex container -->
+      <nav class="nav-container">
+        <!-- nav links div flex container -->
+        <div class="nav-links-container">
+          <!-- nav link -->
+          <div class="nav-link">
+          <a href="#home">Home</a>
+        </div>
+          <!-- nav link -->
+        <div class="nav-link">
+          <a href="#about">About</a>
+        </div>
+          <!-- nav link -->
+        <div class="nav-link">
+          <a href="#project">Projects</a>
+        </div>
+          <!-- nav link -->
+        <div class="nav-link">
+          <a href="#contact">Contact</a>
+        </div>
+
+        </div>
+        
+      </nav>
+    </header>
+    <!-- section that contains a banner -->
+    <section class="banner">  
+      <h1 class="title">
+        Hello, I'm Abdilatif Warsame, I'm a full stack web developer
+      </h1>
+      <div class="banner-link">
+         <a class="btn1" href="#about"> <span> more about me →</span></a>
+      </div>
+     
+      </button>
+      </section>
+      <!-- main website content -->
+    <main class="main">      
+       <!--section for about me  -->
+     <section id="about">
+    <h2>About</h2>
+      <div class="about-container"> 
+         
+         <div class="profile-pic"> 
+           <img src="./assets/images/profile photo.jpeg" alt="profile photo"> 
+        </div>
+        <div class="about-info-container">
+          <div class="about-info">
+            <h3>who am I?</h3>
+         <p>I'm and aspiring web developer currently training away at the 
+          University of Birmingham Coding Boot Camp. Just taking on the new venture in life to
+        add my skills under my belt and to ultimately challenge myself into doing something I've never done </p>
+          </div>
+      <div class="skills-container" >
+     
+        <div class="skills-card">
+           <i class="devicon-html5-plain"></i> 
+           <h3 class="skills-card-info">HTML:5</h3>
+          </div>
+        <div class="skills-card">
+          <i class="devicon-css3-plain"></i> 
+          <h3 class="skills-card-info">CSS</h3>
+        </div>
+        <div class="skills-card">
+          <i class="devicon-javascript-plain"></i>
+          <h3 class="skills-card-info">JAVASCRIPT</h3>
+         </div>
+        <div class="skills-card">
+           <i class="devicon-react-original"></i> 
+           <h3 class="skills-card-info">REACT</h3>
+          </div>  
+      </div>
+      </div>
+      
+     </section>
+     <!-- sections for projects -->
+     <section id="project" class="project">
+       <!-- section for featured projects -->
+      <section id="featured" class="featured-projects">
+        <h2>Featured Projects</h2>
+        <!-- flex container for projects -->
+        <div class="project-container">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators red ">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active">
+                <img src="./assets/images/homeepage2.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption">
+                  <h5>Library of knowledge</h5>
+                  <p>app for users find inspiration and search for books.</p>
+                  <div class="mt-1">
+                    <a class="btn btn-danger" href="https://aosman0.github.io/library-of-knowledge/" role="button">live</a>
+                    <a class="btn btn-danger" href="https://github.com/AOsman0/library-of-knowledge" role="button">Github</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item  ">
+                <img src="./assets/images/weather.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption">
+                  <h5>Weather APP</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <div class="mt-1">
+                    <a class="btn btn-danger" href="https://awarsame1996.github.io/weather-app/" role="button">live</a>
+                    <a class="btn btn-danger" href="https://github.com/awarsame1996/weather-app" role="button">Github</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <img src="./assets/images/quiz-app.png" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Quiz App</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <div class="mt-1" >
+                    <a class="btn btn-danger" href="https://awarsame1996.github.io/code-quiz/" role="button">live</a>
+                    <a class="btn btn-danger" href="https://github.com/awarsame1996/code-quiz" role="button">Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+        </div>
+       
+      
+      </section>
+      <!-- section for all projects -->
+      <section id="all-projects" class="all-projects">
+        <h2>All Projects</h2>
+        <!-- flex container for project -->
+        <div class="project-container">
+           <!-- project card 1 -->
+          <div class="project-card">
+            <a href="https://aosman0.github.io/library-of-knowledge/" target="_blank"> <img
+              src="/assets/images/homeepage2.png"
+              alt="snakes and ladders image"
+            />  </a>
+           
+            <div class="project-info"> 
+              <h5>Library Of knowledge</h5>
+              
+    
+           </div>
+           
+          </div>
+           <!-- project card 2 -->
+          <div class="project-card">
+            <a href="https://github.com/awarsame1996/marketing-agency-refractor-project" target="_blank">
+              <img
+              src="assets/images/marketing-refactoring.png"
+              alt="chess image"
+            />
+            </a>
+            <div class="project-info"> 
+              <h5>Horiseon (Marketing Agency Refactor)</h5>
+        
+           </div>
+          </div>
+           <!-- project card 3 -->
+          <div class="project-card">
+            <a href="https://awarsame1996.github.io/portfolio/" target="_blank">
+              <img
+              src="/assets/images/portfolio.png"
+              alt="checkers image"
+            />
+            </a>
+            <div class="project-info"> 
+              <h5>Personal Portfolio</h5>
+      
+           </div>
+           
+          </div>
+           <!-- project card 4 -->
+          <div class="project-card">
+            <a href="https://awarsame1996.github.io/password-generator/" target="_blank">
+              <img
+              src="/assets/images/password-generator.png"
+              alt="password-generator image"
+            /> 
+            </a>
+            <div class="project-info"> 
+              <h5>Password Generator</h5>
+      
+           </div>
+           
+          </div>
+           <!-- project card 5 -->
+          <div class="project-card">
+            <a href="https://awarsame1996.github.io/code-quiz/" target="_blank">
+              <img
+              src="/assets/images/quiz-app.png"
+              alt="chess image"
+            />
+            </a>
+            <div class="project-info"> 
+              <h5>Code Quiz</h5>
+        
+           </div>
+          </div>
+           <!-- project card 6 -->
+          <div class="project-card">
+           <a href="https://awarsame1996.github.io/planner/" target="_blank">
+            <img
+            src="/assets/images/planner.png"
+            alt="checkers image"
+          />
+           </a>
+            <div class="project-info"> 
+              <h5>Day Planner</h5>
+        
+           </div>
+           
+          </div>
+           <!-- project card 7 -->
+          <div class="project-card">
+            <a href="https://awarsame1996.github.io/weather-app/" target="_blank">
+              <img
+              src="/assets/images/weather.png"
+              alt="checkers image"
+            />
+            </a>
+            <div class="project-info"> 
+              <h5>Weather Dashboard</h5>
+        
+           </div>
+           
+          </div>
+        </div>
+      
+      </section>
+     </section>
+     <!-- section for contact me -->
+     <section id="contact" class="reg-form">
+      <h2>CONTACT ME</h2>
+      <!-- flex container for inputs -->
+      <div class="form-container">
+        <!-- form row - name -->
+        <div class="form-row">
+           <!-- div containing input for first name -->
+          <div class="form-item">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Enter first name"
+            />
+          </div>
+            <!-- div containing input for last name -->
+          <div class="form-item">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Enter Last name"
+            />
+          </div>
+        </div>
+         <!-- form row - email -->
+        <div class="form-row">
+           <!-- div containing  a form item with an input for email -->
+          <div class="form-item">
+            <input
+              class="form-input-email"
+              type="text"
+              placeholder="Enter email address"
+            />
+          </div>
+        </div>
+        <!-- form row - first and second line address -->
+        <div class="form-row">
+            <!-- div containing  a form item with an input for first line of address -->
+          <div class="form-item">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="First line of address"
+            />
+          </div>
+           <!-- div containing  a form item with an input for second line of address -->
+          <div class="form-item">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Second line of address"
+            />
+          </div>
+        </div>
+         <!-- form row - city and postcode -->
+        <div class="form-row">
+           <!-- div containing  a form item with an input for city -->
+          <div class="form-item">
+            <input class="form-input" type="text" placeholder="City" />
+          </div>
+           <!-- div containing  a form item with an input for postcode -->
+          <div class="form-item">
+            <input class="form-input" type="text" placeholder="Postcode" />
+          </div>
+        </div>
+         <!-- form row - form submit -->
+        <div class="form-row">
+          <!-- div containing  a form item for submit button-->
+          <div class="form-item">
+            <div class="form-submit">
+              <a class="btn3" href="#"> <span> submit →</span></a>
+           </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    </main> 
+    <!-- footer that contains footer links -->
+    <footer class="footer">
+      <!-- form icon 1 -->
+      <div class="footer-icon">
+       <a class="footer-link" href="https://www.linkedin.com/in/abdilatif-warsame-130837225/">    
+        
+        <i class="devicon-linkedin-plain"></i>                   
+      </a>
+      </div>
+      <!-- footer icon 2 -->
+      <div class="footer-icon">
+        <a class="footer-link" href="https://twitter.com/AbdilatifW">
+          
+          <i class="devicon-twitter-original"></i>
+          
+        </a>
+      </div>
+      <!-- footer icon 3 -->
+      <div class="footer-icon">
+       <a class="footer-link" href="https://github.com/awarsame1996">
+               
+        <i class="devicon-github-original"></i>
+                    
+      </a> 
+      </div>
+             <div>
+        <p class="footer-name">© Abdilatif Warsame</p>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
